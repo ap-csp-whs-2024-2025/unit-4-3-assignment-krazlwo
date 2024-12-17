@@ -27,7 +27,8 @@ int main()
     std::cin >> user_input;
     
     // implement calculator below
-    if (user_input == 0)
+    if (user_input == 0)2
+
     {
       int random_number = (std::rand() % 6) + 1;  // random numbers between 1 and 6
       std::cout << "You rolled a " << random_number << std::endl;
@@ -40,7 +41,12 @@ int main()
         std::cin >> num1 >> num2;
         std::cout << "Their sum is " << (num1 + num2) << std::endl;
       }
-    }
+      else
+    {
+        if (user_input==2)
+  {
+        std::cout<<"Enter two numbers/n";
+        std::cin>>num1>>num2;
+        std::cout<<"Their difference is "<< (num1 - num2) << std::endl;
   }
   return 0;
-}
